@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="1440.0" styleClass="basic-panels" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.controllers.MainPageController">
+    <children>
+        <Pane fx:id="topPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="85.0" prefWidth="1440.0" styleClass="basic-panels">
+            <children>
+                <ImageView fx:id="topLogo" fitHeight="75.0" fitWidth="370.0" layoutX="42.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
+                <Label fx:id="userLabel" alignment="CENTER_RIGHT" layoutX="274.0" layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="950.0" styleClass="user-label" text="Label" />
+            </children>
+        </Pane>
+        <Pane fx:id="leftNavPane" layoutY="87.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="865.0" prefWidth="275.0" styleClass="basic-panels">
+            <children>
+                <ToggleButton fx:id="conceptsButton" alignment="CENTER_LEFT" layoutY="42.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="45.0" prefWidth="260.0" styleClass="nav-buttons" text="Достопримечательности">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="Menu" />
+                    </toggleGroup>
+                </ToggleButton>
+                <ToggleButton fx:id="moviesButton" alignment="CENTER_LEFT" layoutY="137.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="45.0" prefWidth="260.0" selected="true" styleClass="nav-buttons" text="Карта" toggleGroup="$Menu" />
+                <ToggleButton fx:id="genresButton" alignment="CENTER_LEFT" layoutY="206.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="45.0" prefWidth="260.0" styleClass="nav-buttons" text="Тип архетиктуры" toggleGroup="$Menu" />
+                <ToggleButton fx:id="certificatesButton" alignment="CENTER_LEFT" layoutY="275.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="45.0" prefWidth="260.0" styleClass="nav-buttons" text="Тип ордена" toggleGroup="$Menu" />
+                <ToggleButton fx:id="connectButton" alignment="CENTER_LEFT" layoutY="344.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="45.0" prefWidth="260.0" styleClass="nav-buttons" text="Обратая связь" toggleGroup="$Menu" />
+                <Button fx:id="exitButton" layoutY="676.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="45.0" prefWidth="260.0" styleClass="exit-button" text="Выйти" />
+            </children>
+
+
+        </Pane>
+        <Separator layoutY="87.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="1440.0" />
+        <Separator layoutX="272.0" layoutY="88.0" maxHeight="-Infinity" minHeight="-Infinity" orientation="VERTICAL" prefHeight="865.0" prefWidth="0.0" />
+
+    </children>
+</AnchorPane>
